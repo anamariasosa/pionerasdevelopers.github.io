@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "¡Bienvenida pionera!"
+date:   2016-03-02 18:14:47
+author: "Ana María Sosa"
+author_github: "anamariasosa"
+author_twitter: "anamariasosam"
+categories: contribucion
+image: mochilera.jpg
+---
+Hoy empezamos nuestro viaje, en cual hablaremos de la diversidad de los lenguajes de programación y como estos nos permitirán crear esas aplicaciones que siempre han pasado por nuestra mente pero que nunca no habíamos puesto en la tarea de aprender.
+
+Para realizar este viaje con nosotras sólo necesitas ganas, porque cuando tu haces algo con pasión lo demás lo vamos obteniendo en el camino. No hay excusas por que en el mundo digital todo lo tenemos a la mano.
+
+Así que si estás lista para aprender y emprender, agarra tu maleta y ponte unos buenos zapatos para comenzar.
