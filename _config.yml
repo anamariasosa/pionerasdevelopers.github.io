@@ -10,7 +10,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 twitter_username: pionerasdevelopers
 github_username:  pionerasdevelopers
 
-permalink: pretty
+permalink: /:title
 paginate: 5
 
 # Build settings

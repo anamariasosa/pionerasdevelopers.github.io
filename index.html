@@ -23,10 +23,10 @@ body_class: "home-template user"
               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%B %-d, %Y" }}</a>
             </time>
           </div>
-          {% if post.author %}
-          <div class="meta">
-            <p>Artículo creado por: {{ post.author }}</p>
-          </div>
+          {% if post.author && post.author_github %}
+            <div class="meta">
+              <p>Artículo creado por: <a href="https://www.github.com/{{post.author_github}}" target="_blank">{{ post.author }}</a></p>
+            </div>
           {% endif %}
 
           <header>

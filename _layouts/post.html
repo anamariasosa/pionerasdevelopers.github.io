@@ -6,7 +6,7 @@ body_class: post-template
 <div id="feature_image">
   <div class="inner" style="background-image: url('{{ site.baseurl }}/content/images//{{ page.image }}')">
     <img src='{{ site.baseurl }}/content/images/{{ page.image }}'>
-    </div>
+  </div>
 </div>
 {% endif %}
 
@@ -23,13 +23,19 @@ body_class: post-template
         {{ content }}
     </div>
 
+    {% if page.author && page.author_github %}
+      <div class="meta">
+        <p>Artículo creado por: <a href="https://www.github.com/{{page.author_github}}" target="_blank">{{ page.author }}</a></p>
+      </div>
+    {% endif %}
+
     <menu>
       <a href="" id="btn_share" class="btn" title="Share">
         <span aria-hidden="true" data-icon="S"></span>
         <strong>Share</strong>
       </a>
-      <a href="http://twitter.com/share?text={{ page.title | cgi_escape }}&url={{ site.url }}{{ page.url prepend: site.baseurl }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
-        <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
+      <a href="http://twitter.com/share?text={{ page.title | cgi_escape }}{% if page.author_twitter %}, post creado por: @{{ page.author_twitter }}{% endif %}&url={{ site.url }}{{ page.url prepend: site.baseurl }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
+        <span aria-hidden="true" data-icon="C"></span> Compartir en Twitter
       </a>
     </menu>
 </article>
