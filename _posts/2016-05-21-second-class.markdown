@@ -8,4 +8,4 @@ author_twitter: "pionerasdev"
 categories: clases
 image: post/4/header.jpg
 ---
-Hablamos sobre github
+Hablamos sobre github, cada chica realizó su primer pull request
